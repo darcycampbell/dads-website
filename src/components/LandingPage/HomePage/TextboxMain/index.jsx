@@ -1,0 +1,24 @@
+import React from "react";
+
+const TextboxMain = ({ clickedServices, clickedContact }) => {
+  const paragraphText =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamu iaculis purus at facilisis malesuada. Donec sagittis arcu mi, vitae euismod diam placerat quis. Fusce vestibulum eleifend lectus, sed cursus nulla cursus in. Ut ac mi feugiat, tincidunt metus at, ultricies tellus. Nunc varius justo sed libero faucibus gravida.";
+
+  return (
+    <div className="main textbox container">
+      <h1>Steve Campbell</h1>
+      <p>
+        {paragraphText}
+        {/*       <span>
+          <Link to="/About"> Read more...</Link>
+        </span> */}
+      </p>
+      <div className="button container">
+        <button onClick={clickedServices}>Services</button>
+        <button onClick={clickedContact}>Contact</button>
+      </div>
+    </div>
+  );
+};
+
+export default TextboxMain;

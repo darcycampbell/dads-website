@@ -1,0 +1,109 @@
+/* Home Page */
+
+.container.home-page {
+  background-image: url("https://picsum.photos/3200/1800");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  height: 100vh;
+}
+
+.home-page .container {
+  position: absolute;
+}
+
+.home-page .container.textbox {
+  height: 35%;
+  padding: 0.5%;
+  padding-left: 1%;
+}
+
+.home-page .container.textbox.main {
+  left: 5%;
+  bottom: 2%;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% 80%;
+  z-index: 1;
+}
+
+.home-page .container.textbox.side {
+  left: 46%;
+  bottom: 2%;
+  width: 15%;
+  z-index: 0.9;
+}
+
+.home-page .container.next-section {
+  right: 10%;
+  bottom: 0;
+  width: 30%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.home-page .next-section > * {
+  flex: 1;
+  margin: 0;
+}
+
+.home-page .container.button {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-page .textbox {
+  background-color: rgba(206, 150, 108);
+  border: 2px solid white;
+}
+
+.home-page .textbox.main {
+  border-radius: 10px;
+}
+
+.home-page .textbox.side {
+  border-radius: 0 10px 10px 0;
+}
+
+/* Projects Page */
+
+.container.projects-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-page .container.nav-section {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.projects-page .container.project-sections {
+  width: 80%;
+}
+
+.projects-page .container.project-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  margin-top: 40px;
+}
+
+/* Slideshow */
+
+.container.slideshow {
+  width: 100%;
+  height: 100%;
+}
