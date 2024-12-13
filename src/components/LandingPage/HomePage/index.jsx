@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
 import TextboxMain from "./TextboxMain";
 import TextboxSide from "./TextboxSide";
 import NextSection from "./NextSection";
@@ -7,7 +8,9 @@ const HomePage = () => {
   const [showServices, setServices] = useState(false);
   const [showContact, setContact] = useState(false);
 
-  const servicesItems = ["Service 1", "Another service"];
+  const link = <Link to="/services">Link to services</Link>
+
+  const servicesItems = ["Service 1", "Another service", link];
   const contactItems = ["Contact me", "at this", "address"];
 
   function clickedServices() {

@@ -18,7 +18,7 @@ const ProjectSection = ({ category, modifier }) => {
     } else {
       setShow(newModifier);
     }
-  }, [pressed]);
+  }, [pressed, newModifier]);
 
   return (
     <div>

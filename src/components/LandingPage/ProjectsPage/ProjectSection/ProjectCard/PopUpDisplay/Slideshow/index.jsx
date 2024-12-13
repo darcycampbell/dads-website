@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useState } from "react";
 import Slide from "./Slide";
 import SlideButton from "./SlideButton";
 import { ProjectContext } from "../../..";
