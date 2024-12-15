@@ -107,3 +107,30 @@
   width: 100%;
   height: 100%;
 }
+
+/* Services Page */
+.container.services-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-page .container.contents {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.services-page .container.service-cards {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-page .container.service-card {
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
