@@ -2,7 +2,7 @@ import React from "react";
 import services from "../../content/services";
 import ServiceCard from "./ServiceCard";
 import ContentsContainer from "./ContentsContainer";
-import HomeButton from "./HomeButton";
+import HomeButton from "../Misc/HomeButton";
 
 const ServicesPage = () => {
   return (

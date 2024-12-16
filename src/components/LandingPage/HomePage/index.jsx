@@ -1,17 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router";
 import TextboxMain from "./TextboxMain";
-import TextboxSide from "./TextboxSide";
+import TextboxServices from "./TextboxServices";
+import TextboxContact from "./TextboxContact";
 import NextSection from "./NextSection";
 
 const HomePage = () => {
   const [showServices, setServices] = useState(false);
   const [showContact, setContact] = useState(false);
-
-  const link = <Link to="/services">Link to services</Link>
-
-  const servicesItems = ["Service 1", "Another service", link];
-  const contactItems = ["Contact me", "at this", "address"];
 
   function clickedServices() {
     setContact(false);
@@ -29,8 +24,8 @@ const HomePage = () => {
         clickedServices={clickedServices}
         clickedContact={clickedContact}
       />
-      <TextboxSide show={showServices} listItems={servicesItems} />
-      <TextboxSide show={showContact} listItems={contactItems} />
+      <TextboxServices show={showServices} />
+      <TextboxContact show={showContact} />
       <NextSection />
     </div>
   );

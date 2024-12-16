@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const HomeButton = () => {
   return (
     <Link to={"/"}>
-      <button>Home</button>
+      <button id="goToHomeButton">Home</button>
     </Link>
   );
 };

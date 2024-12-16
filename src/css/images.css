@@ -1,3 +1,7 @@
 .project-card img {
     grid-row: 1 / span 2;
   }
+
+.about-page img {
+  padding: 10px;
+}

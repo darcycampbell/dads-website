@@ -20,7 +20,7 @@
     cursor: pointer;
   }
 
-  .services-page button {
+  #goToHomeButton {
     position: fixed;
     top: 3%;
     left: 3%;
