@@ -28,7 +28,7 @@ const ContentsList = ({ condition }) => {
             </li>
           );
         } else {
-          return;
+          return null;
         }
       })}
     </ul>
