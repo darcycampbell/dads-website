@@ -40,7 +40,7 @@
 
 .home-page .container.textbox.side .component {
   padding: 0 10px;
-  margin: 0
+  margin: 0;
 }
 
 .home-page .container.textbox.side ul.component {
@@ -51,7 +51,16 @@
   padding-top: 10px;
 }
 
-.home-page .container.textbox.side .component.third {
+.home-page .container.textbox.side .component.middle.list {
+  display: none;
+}
+
+.home-page .container.textbox.side .component.middle.captcha {
+  transform: scale(0.77);
+  transform-origin: 0 0;
+}
+
+.home-page .container.textbox.side .component.final {
   padding-bottom: 10px;
 }
 
