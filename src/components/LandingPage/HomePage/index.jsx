@@ -10,7 +10,15 @@ const HomePage = () => {
   const [header, setHeader] = useState("Hello");
 
   useEffect(() => {
-    fetch("http://localhost:8000/api")
+    const jsonData = {message: "Goodbye"};
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(jsonData)
+    };
+    fetch("http://localhost:8000/api", options)
       .then((res) => res.json())
       .then((data) => setHeader(data.message));
   }, [])
