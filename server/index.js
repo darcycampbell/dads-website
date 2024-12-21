@@ -5,13 +5,17 @@ import axios from "axios";
 import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
-import contactDetails from "../src/content/contactDetails.js";
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: `${directory}../../.env` });
 const app = express();
 const PORT = 8000;
 const key = process.env.SECRET_SITE_KEY;
+const contactDetails = {
+  email: "example@gmail.com",
+  phone: "000 0000 0000",
+  address: "79 Down Drive, Reyney Beach",
+};
 console.log(key);
 
 app.use(cors());

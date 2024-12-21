@@ -28,10 +28,9 @@ const TextboxContact = ({ show, details }) => {
         your next project.
       </p>
       <ul className="middle component list">
-        <li>Call Steve on ${phone}</li>
-        <li>Email ${email}</li>
-        <li>Find me at ${address}</li>
-        <li>What is this?</li>
+        <li>Call Steve on {phone}</li>
+        <li>Email {email}</li>
+        <li>Find me at {address}</li>
       </ul>
       <p className="final component">I look forward to working with you!</p>
     </div>
