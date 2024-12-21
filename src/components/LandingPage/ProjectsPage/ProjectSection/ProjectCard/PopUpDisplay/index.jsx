@@ -1,5 +1,4 @@
 import React from "react";
-import CloseButton from "./CloseButton";
 import Slideshow from "./Slideshow";
 
 const PopUpDisplay = ({ show, setShow }) => {
