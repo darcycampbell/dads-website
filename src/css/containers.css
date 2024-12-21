@@ -51,10 +51,6 @@
   padding-top: 10px;
 }
 
-.home-page .container.textbox.side .component.middle.list {
-  display: none;
-}
-
 .home-page .container.textbox.side .component.middle.captcha {
   transform: scale(0.77);
   transform-origin: 0 0;

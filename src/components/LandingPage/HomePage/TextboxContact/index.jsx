@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextboxContact = ({ show }) => {
+const TextboxContact = ({ show, details }) => {
   const displaySetting = [
     { display: "none" },
     {
@@ -21,9 +21,9 @@ const TextboxContact = ({ show }) => {
         your next project.
       </p>
       <ul className="middle component list">
-        <li>Call Steve on 0000 000 000</li>
-        <li>Email me@medesign.com.au</li>
-        <li>Find me at this address</li>
+        <li>Call Steve on ${details.phone}</li>
+        <li>Email ${details.email}</li>
+        <li>Find me at ${details.address}</li>
         <li>What is this?</li>
       </ul>
       <p className="final component">I look forward to working with you!</p>
