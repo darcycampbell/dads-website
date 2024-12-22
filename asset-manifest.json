@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dads-website/static/css/main.b7fa72eb.css",
+    "main.js": "/dads-website/static/js/main.037a773d.js",
+    "static/js/453.e9419ded.chunk.js": "/dads-website/static/js/453.e9419ded.chunk.js",
+    "index.html": "/dads-website/index.html",
+    "main.b7fa72eb.css.map": "/dads-website/static/css/main.b7fa72eb.css.map",
+    "main.037a773d.js.map": "/dads-website/static/js/main.037a773d.js.map",
+    "453.e9419ded.chunk.js.map": "/dads-website/static/js/453.e9419ded.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7fa72eb.css",
+    "static/js/main.037a773d.js"
+  ]
+}
