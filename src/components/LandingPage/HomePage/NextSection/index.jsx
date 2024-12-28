@@ -4,8 +4,8 @@ import DownArrow from "./DownArrow";
 const NextSection = () => {
   return (
     <div className="next-section container">
-      <h2>Scroll to my projects</h2>
       <DownArrow />
+      <h2>Projects</h2>
     </div>
   );
 };

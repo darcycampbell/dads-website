@@ -4,47 +4,34 @@
   grid-template-columns: 100%; 
 } */
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  width: 150px;
-  height: 50px;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: honeydew;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
-button:hover {
-  border-color: orangered;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-#goToTopButton {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+:root {
+/*   --accent-color: hsla(0, 86%, 30%, 0.9);
+  --background-color: #FFF0DC;
+  --background-color-translucent: hsla(34, 100%, 93%, 0.75);
+  --highlight-color: #f0b262;
+  --highlight-color-translucent: hsla(34, 83%, 66%, 0.815);
+  --border-color: #543A14;
+  --border-color-translucent: hsla(36, 62%, 20%, 0.65);
+  --text-color: #1d0903; */
+  --accent-color: hsla(0, 85%, 40%, 0.9);
+  --text-color: #FFF0DC;
+  --highlight-color: #f0b262;
+  --highlight-color-translucent: hsla(34, 83%, 66%, 0.815);
+  --border-color: #543A14;
+  --border-color-translucent: hsla(36, 62%, 20%, 0.65);
+  --background-color: #1d0903;
+  --background-color-translucent: #1d0903;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {

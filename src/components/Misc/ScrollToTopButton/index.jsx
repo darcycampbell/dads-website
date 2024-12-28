@@ -27,7 +27,7 @@ const ScrollToTopButton = () => {
       id="goToTopButton"
       style={style}
     >
-      Top
+      &uarr;
     </button>
   );
 };

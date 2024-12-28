@@ -17,9 +17,9 @@ const ProjectsPage = () => {
     navItems.forEach((item) => {
       const newItem = projects.filter((project) => {
         return project.category === item.toLowerCase().replace(" ", "");
-      })
+      });
       if (newItem.length !== 0) {
-        array.push(newItem)
+        array.push(newItem);
       }
     });
     return array;
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
           })}
         </div>
       </div>
-      <div className="project-sections container"> 
+      <div className="project-sections container">
         {createProjectCategories().map((category, index) => {
           modifier += category.length;
           return (
@@ -54,6 +54,11 @@ const ProjectsPage = () => {
             </div>
           );
         })}
+      </div>
+      <div class="recaptcha-notice">
+        This site is protected by reCAPTCHA and the Google {" "} 
+        <a href="https://policies.google.com/privacy">Privacy Policy</a> and {" "}
+        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
       </div>
     </div>
   );

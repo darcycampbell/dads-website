@@ -13,3 +13,7 @@
     border: black solid 5px;
     background-color: #fefefe;
   }
+
+  .border-radius-changed {
+    border-right: 2px solid var(--text-color);
+  }

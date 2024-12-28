@@ -4,40 +4,62 @@
 }
 
 .close {
-    color: #aaa;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 0.4;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  color: #aaa;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 0.4;
+}
 
-  #goToHomeButton {
-    position: fixed;
-    top: 3%;
-    left: 3%;
-    background-color: firebrick;
-  }
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-  #goToTopButton {
-    position: fixed;
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99; 
-    border: none; 
-    outline: none;
-    background-color: red;
-    color: white; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-size: 18px;
-  }
+#goToHomeButton {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#goToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 22px;
+
+  z-index: 99;
+  padding: 15px;
+}
+
+#goToTopButton:hover {
+  font-size: 30px;
+}
+
+button {
+  border-radius: 5px;
+  border: 0;
+  width: 72px;
+  height: 72px;
+  background-color: var(--text-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--background-color);
+  font-family: Helvetica, sans-serif;
+}
+
+button:hover {
+  background-color: var(--highlight-color) !important;
+  color: var(--text-color);
+  font-weight: 600;
+}

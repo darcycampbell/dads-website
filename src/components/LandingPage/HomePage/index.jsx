@@ -13,6 +13,7 @@ const HomePage = () => {
   const [contactDetails, setContactDetails] = useState(null)
   const recaptchaRef = useRef();
   const key = process.env.REACT_APP_SITE_KEY
+  const mainTextboxContainer = document.getElementById("main-textbox")
 
   useEffect(() => {
     if (recaptchaToken) {
@@ -28,6 +29,15 @@ const HomePage = () => {
         .then((data) => setContactDetails(data));
     }
   }, [recaptchaToken]);
+
+  useEffect(() => {
+    if (mainTextboxContainer) {
+      mainTextboxContainer.classList.remove("border-radius-changed")
+      if (showContact || showServices) {
+        mainTextboxContainer.classList.add("border-radius-changed")
+      }
+    }
+  }, [showContact, showServices])
 
   function clickedServices() {
     setContact(false);

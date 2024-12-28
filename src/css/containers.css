@@ -16,26 +16,35 @@
 }
 
 .home-page .container.textbox {
-  height: 35%;
+  height: 30%;
+  bottom: 0;
   padding: 0.5%;
   padding-left: 1%;
 }
 
 .home-page .container.textbox.main {
   left: 5%;
-  bottom: 2%;
-  width: 40%;
+  width: 33%;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 68% 32%;
   grid-template-rows: 20% 80%;
   z-index: 1;
 }
 
 .home-page .container.textbox.side {
-  left: 46%;
-  bottom: 2%;
+  left: 39.5%;
   width: 18%;
   z-index: 0.9;
+}
+
+.home-page .textbox {
+  background-color: var(--background-color-translucent);
+}
+
+.home-page .textbox.main {
+}
+
+.home-page .textbox.side {
 }
 
 .home-page .container.textbox.side .component {
@@ -65,36 +74,21 @@
   bottom: 0;
   width: 30%;
   display: flex;
-  flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
-}
-
-.home-page .next-section > * {
-  flex: 1;
-  margin: 0;
+  gap: 10px;
 }
 
 .home-page .container.button {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1 span;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-}
-
-.home-page .textbox {
-  background-color: rgba(206, 150, 108);
-  border: 2px solid white;
-}
-
-.home-page .textbox.main {
-  border-radius: 10px;
-}
-
-.home-page .textbox.side {
-  border-radius: 0 10px 10px 0;
+  gap: 25px;
 }
 
 /* Projects Page */
