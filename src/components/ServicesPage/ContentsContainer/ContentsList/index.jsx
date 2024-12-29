@@ -1,6 +1,5 @@
 import React from "react";
 import services from "../../../../content/services";
-import useWordShaper from "../../../../hooks/useWordShaper";
 
 const ContentsList = ({ condition, select }) => {
   return (
@@ -8,14 +7,13 @@ const ContentsList = ({ condition, select }) => {
       {services.map((service) => {
         if (condition.includes(service.id)) {
           return (
-            <li key={service.id}>
-              <a
-                onClick={() => {
-                  select(service.name);
-                }}
-              >
-                {service.name}
-              </a>
+            <li
+              key={service.id}
+              onClick={() => {
+                select(service.name);
+              }}
+            >
+              {service.name}
             </li>
           );
         } else {

@@ -79,9 +79,13 @@ a:hover {
   color: var(--highlight-color);
 }
 
-.services-page a {
+.services-page li {
+  color: var(--accent-color);
   font-size: 20px;
-  text-decoration: none;
+}
+
+.services-page li:hover {
+  color: var(--highlight-color);
 }
 
 .services-page ul {
