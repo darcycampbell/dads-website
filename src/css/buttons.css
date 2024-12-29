@@ -20,22 +20,23 @@
   cursor: pointer;
 }
 
-#goToHomeButton {
+/* Ignore above for now */
+
+#goToHomeButton, #goToTopButton {
   position: fixed;
+  background-color: var(--text-color);
+  color: var(--background-color);
+} 
+
+#goToHomeButton {
   top: 3%;
   left: 3%;
-  background-color: var(--background-color);
-  color: var(--text-color);
 }
 
 #goToTopButton {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  bottom: 3%;
+  right: 3%;
   font-size: 22px;
-
   z-index: 99;
   padding: 15px;
 }
@@ -47,19 +48,23 @@
 button {
   border-radius: 5px;
   border: 0;
+  transition: border-color 0.25s;
+
   width: 72px;
   height: 72px;
-  background-color: var(--text-color);
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  
   cursor: pointer;
-  transition: border-color 0.25s;
+  
   font-size: 16px;
   font-weight: 400;
-  color: var(--background-color);
   font-family: "Playfair Display", serif;
 }
 
 button:hover {
   background-color: var(--highlight-color) !important;
-  color: var(--text-color);
+  color: var(--background-color);
   font-weight: 600;
 }

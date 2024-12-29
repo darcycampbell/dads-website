@@ -1,5 +1,5 @@
 .service-card-selected {
-    border: 3px solid red !important;
+    border-color: var(--accent-color) !important;
 }
 
 .bold-text {
@@ -15,5 +15,5 @@
   }
 
   .border-radius-changed {
-    border-right: 2px solid var(--text-color);
+    border-right: 2px solid var(--background-color);
   }

@@ -1,8 +1,8 @@
 /* Home Page */
 
 .container.home-page {
-  background-image: url("../../public/media/Website\ -\ Wine\ Barrel.jpg");
-  background-color: #cccccc;
+  background-image: url("../../public/media/wine-barrel-flipped.jpg");
+  background-color: var(--background-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@
 }
 
 .home-page .textbox {
-  background-color: var(--background-color-translucent);
+  background-color: var(--text-color);
 }
 
 .home-page .textbox.main {
@@ -61,11 +61,6 @@
 
 .home-page .container.textbox.side .component.first {
   padding-top: 10px;
-}
-
-.home-page .container.textbox.side .component.middle.captcha {
-  transform: scale(0.77);
-  transform-origin: 0 0;
 }
 
 .home-page .container.textbox.side .component.final {
@@ -132,14 +127,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .services-page .container.contents {
   width: 60%;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .services-page .container.service-cards {
@@ -149,10 +144,11 @@
 }
 
 .services-page .container.service-card {
-  border: 3px solid black;
-  border-radius: 10px;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
   margin-bottom: 15px;
-  padding: 5px;
+  padding: 10px;
+  padding-top: 8px;
 }
 
 /* About Page */

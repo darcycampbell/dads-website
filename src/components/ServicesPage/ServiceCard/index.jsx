@@ -3,7 +3,7 @@ import React from 'react'
 const ServiceCard = ({id, name, description}) => {
     return (
         <div id={id} className='service-card container'>
-            <h3>{name}</h3>
+            <h2>{name}</h2>
             <p>{description}</p>
         </div>
     )

@@ -27,7 +27,7 @@ const TextboxContact = ({ show, details }) => {
         Arrange a <span className="bold-text">free consultation</span> to start
         your next project.
       </p>
-      <ul className="middle component list">
+      <ul className="list component">
         <li>Call Steve on {phone}</li>
         <li>Email {email}</li>
         <li>Find me at {address}</li>

@@ -1,8 +1,10 @@
 import React from "react";
 import projects from "../../../content/projects";
 import ProjectSection from "./ProjectSection";
+import useWordShaper from "../../../hooks/useWordShaper";
 
 const ProjectsPage = () => {
+  const wordShaper = useWordShaper("makeOneWordString");
   var modifier = 0;
 
   const navItems = [
@@ -16,7 +18,7 @@ const ProjectsPage = () => {
     const array = [];
     navItems.forEach((item) => {
       const newItem = projects.filter((project) => {
-        return project.category === item.toLowerCase().replace(" ", "");
+        return project.category === wordShaper(item);
       });
       if (newItem.length !== 0) {
         array.push(newItem);
@@ -33,7 +35,7 @@ const ProjectsPage = () => {
           {navItems.map((item, index) => {
             return (
               <div>
-                <a key={index} href={`#${item.toLowerCase().replace(" ", "")}`}>
+                <a key={index} href={`#${wordShaper(item)}`}>
                   {item}
                 </a>
                 <br />

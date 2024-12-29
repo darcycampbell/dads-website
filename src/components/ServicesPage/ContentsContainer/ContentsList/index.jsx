@@ -1,16 +1,8 @@
 import React from "react";
 import services from "../../../../content/services";
+import useWordShaper from "../../../../hooks/useWordShaper";
 
-const ContentsList = ({ condition }) => {
-  function selectServiceCard(id) {
-    const elements = document.querySelectorAll(".service-card");
-    elements.forEach((e) => {
-      e.classList.remove("service-card-selected");
-    });
-    const element = document.getElementById(id);
-    element.classList.add("service-card-selected");
-  }
-
+const ContentsList = ({ condition, select }) => {
   return (
     <ul>
       {services.map((service) => {
@@ -19,9 +11,8 @@ const ContentsList = ({ condition }) => {
             <li key={service.id}>
               <a
                 onClick={() => {
-                  selectServiceCard(service.name);
+                  select(service.name);
                 }}
-                href={`#${service.name}`}
               >
                 {service.name}
               </a>
