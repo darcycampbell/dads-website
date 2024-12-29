@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const TextboxMain = ({ ref, clickedServices, clickedContact, isReady }) => {
+const TextboxMain = ({ clickedServices, clickedContact, isReady }) => {
   const paragraphText =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamu iaculis purus at facilisis malesuada. Donec sagittis arcu mi, vitae euismod diam placerat quis.  ";
 

@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 250;
 }
 
@@ -28,7 +28,7 @@ h2, h3 {
 }
 
 .next-section h2 {
-  color: var(--background-color);
+  color: var(--text-color);
   font-size: 1.8em;
 }
 
@@ -40,7 +40,7 @@ p {
 
 .next-section p {
   font-size: 50px;
-  color: var(--background-color);
+  color: var(--text-color);
 }
 
 .main.textbox.container p {
@@ -61,10 +61,6 @@ p {
 
 .about-page span {
   text-decoration: underline;
-}
-
-.main.textbox.container .services {
-  font-size: 15px;
 }
 
 a:link, a:visited {
