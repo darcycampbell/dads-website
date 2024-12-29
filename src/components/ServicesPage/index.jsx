@@ -32,7 +32,7 @@ const ServicesPage = () => {
 
       }
     }
-  }, [highlightedSection]);
+  }, [highlightedSection, location.state, wordShaper]);
 
   return (
     <div className="services-page container" id="top">
