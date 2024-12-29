@@ -37,7 +37,7 @@ const HomePage = () => {
         mainTextboxContainer.classList.add("border-radius-changed")
       }
     }
-  }, [showContact, showServices])
+  }, [showContact, showServices, mainTextboxContainer])
 
   function clickedServices() {
     setContact(false);

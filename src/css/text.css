@@ -17,6 +17,7 @@ h1 {
 .services-page h1 {
   text-align: center;
   margin-top: 20px;
+  color: var(--background-color);
 }
 
 .about-page h1 {
