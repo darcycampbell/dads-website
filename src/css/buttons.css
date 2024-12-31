@@ -64,7 +64,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--highlight-color) !important;
+  background-color: var(--new-color) !important;
   color: var(--background-color);
   font-weight: 600;
 }

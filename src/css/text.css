@@ -28,13 +28,13 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  margin-bottom: 2px;
+}
+
 .next-section h2 {
   color: var(--background-color);
   font-size: 1.8em;
-}
-
-.services-page h2 {
-  margin-bottom: 2px;
 }
 
 p {
@@ -49,7 +49,7 @@ p {
   color: var(--background-color);
 }
 
-.textbox p {
+.home-page .textbox p {
   grid-column: 1;
   grid-row: 2;
   margin-top: 10px;
@@ -68,7 +68,9 @@ p {
 }
 
 .about-page span {
-  text-decoration: underline;
+  font-weight: bold;
+  color: var(--new-color);
+  cursor: help;
 }
 
 a, a:visited {
@@ -80,18 +82,25 @@ a:hover {
 }
 
 .services-page li {
-  color: var(--accent-color);
+  color: var(--new-color);
   font-size: 20px;
 }
 
 .services-page li:hover {
-  color: var(--highlight-color);
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 .services-page ul {
   list-style-type: circle;
 }
 
-.home-page li {
+.home-page a, .home-page li::marker {
   color: var(--background-color);
+  text-decoration: none;
+  font-style: italic;
+}
+
+.home-page a:hover {
+  font-style: normal;
 }
