@@ -10,7 +10,6 @@ const ProjectCard = () => {
     <div className="project-card container">
       <img src={project.image} alt={project.alt} onClick={() => {setShow(true)}} />
       <h3>{project.title}</h3>
-      <p>{project.text}</p>
       <PopUpDisplay show={show} setShow={setShow} />
     </div>
   );
