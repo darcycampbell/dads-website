@@ -4,7 +4,7 @@ const projects = [
       title: "Building 1",
       image: "https://picsum.photos/350/250",
       alt: "This is an image",
-      category: "renovations",
+      category: "Renovations",
       text: "This is a building that has been built",
       gallery: [
         { id: 1, image: "https://picsum.photos/350/200", alt: "image" },
@@ -19,7 +19,7 @@ const projects = [
       title: "Building 2",
       image: "https://picsum.photos/350/250",
       alt: "This is not actually an image",
-      category: "renovations",
+      category: "Renovations",
       text: "This is a building that will be built someday if I am lucky, maybe, hopefully. Please!",
       gallery: [
         { id: 1, image: "https://picsum.photos/350/200", alt: "image" },
@@ -34,7 +34,7 @@ const projects = [
       title: "Building 3",
       image: "https://picsum.photos/350/250",
       alt: "This is not actually an image",
-      category: "renovations",
+      category: "Renovations",
       text: "This is the third building in this list",
       gallery: [
         { id: 1, image: "https://picsum.photos/350/200", alt: "image" },
@@ -49,7 +49,7 @@ const projects = [
       title: "Building 4",
       image: "https://picsum.photos/350/250",
       alt: "This is not actually an image",
-      category: "renovations",
+      category: "Renovations",
       text: "I should not be able to see this",
       gallery: [
         { id: 1, image: "https://picsum.photos/350/200", alt: "image" },
@@ -64,7 +64,7 @@ const projects = [
       title: "Building 5",
       image: "https://picsum.photos/350/251",
       alt: "This is not actually an image",
-      category: "newresidential",
+      category: "New Residential",
       text: "I should not be able to see this",
       gallery: [
         { id: 1, image: "https://picsum.photos/350/200", alt: "image" },
@@ -79,7 +79,7 @@ const projects = [
       title: "Building 6",
       image: "https://picsum.photos/350/251",
       alt: "This is not actually an image",
-      category: "newresidential",
+      category: "New Residential",
       text: "I should not be able to see this",
       gallery: [
         { id: 1, image: "https://picsum.photos/350/200", alt: "image" },
@@ -94,7 +94,7 @@ const projects = [
       title: "Building 7",
       image: "https://picsum.photos/350/251",
       alt: "This is not actually an image",
-      category: "newresidential",
+      category: "New Residential",
       text: "I should not be able to see this",
       gallery: [
         { id: 1, image: "https://picsum.photos/350/200", alt: "image" },

@@ -43,6 +43,16 @@ const services = [
         id: 9,
         name: "Right?",
         description: "I'm trying to be flexible"
+    },
+    {
+        id: 10,
+        name: "Right?",
+        description: "I'm trying to be flexible"
+    },
+    {
+        id: 11,
+        name: "Right?",
+        description: "I'm trying to be flexible"
     }
 ]
 

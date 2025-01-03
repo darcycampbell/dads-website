@@ -7,7 +7,7 @@ h1, h2, h3 {
   margin: 0;
 }
 
-h1 {
+h1, .projects-page h2 {
   font-size: 2.5em;
   line-height: 1.1;
 }
@@ -19,7 +19,7 @@ h1 {
   grid-row: 1;
 }
 
-.services-page h1 {
+.services-page h1, .projects-page h2 {
   text-align: center;
   margin-top: 20px;
 }
@@ -81,17 +81,18 @@ a:hover {
   color: var(--highlight-color);
 }
 
-.services-page li {
+.table-of-contents li {
   color: var(--new-color);
   font-size: 20px;
+  text-align: left;
 }
 
-.services-page li:hover {
+.table-of-contents li:hover {
   color: var(--text-color);
   cursor: pointer;
 }
 
-.services-page ul {
+.table-of-contents ul {
   list-style-type: circle;
 }
 

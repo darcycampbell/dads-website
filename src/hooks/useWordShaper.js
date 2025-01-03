@@ -1,5 +1,5 @@
 const useWordShaper = (check) => {
-    if (check === "makeOneWordString") {
+    if (check === "makeOneWord") {
         return (input) => {
             return input.toLowerCase().replaceAll(" ", "");
         }
