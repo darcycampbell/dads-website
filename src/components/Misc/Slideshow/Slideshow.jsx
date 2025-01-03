@@ -1,16 +1,14 @@
-import React, { useContext, useState } from "react";
-import Slide from "./Slide";
-import SlideButton from "./SlideButton";
-import { ProjectContext } from "../../..";
+import React, { useState } from "react";
+import SlideImage from "./SlideImage/SlideImage";
+import SlideButton from "./SlideButton/SlideButton";
 
-const Slideshow = () => {
+const Slideshow = ({ gallery }) => {
   const [showSlide, setSlide] = useState(1);
   const [showText, setText] = useState(false);
-  const project = useContext(ProjectContext)
   const displaySetting = [{ display: "block" }, { display: "none" }];
 
   function updateShow(n) {
-    const limit = project.gallery.length;
+    const limit = gallery.images.length;
     if (n < 1) {
       setSlide(limit);
     } else if (n > limit) {
@@ -30,15 +28,9 @@ const Slideshow = () => {
 
   return (
     <div className="slideshow container">
-      <div className="slideshow content">
-        {project.gallery.map((slide) => {
-          return (
-            <Slide
-              key={slide.id}
-              slide={slide}
-              showSlide={showSlide}
-            />
-          );
+      <div className="content container">
+        {gallery.images.map((image) => {
+          return <SlideImage key={image.id} slide={image} showSlide={showSlide} />;
         })}
         <span
           style={showText ? displaySetting[1] : displaySetting[0]}
@@ -50,14 +42,14 @@ const Slideshow = () => {
           style={showText ? displaySetting[0] : displaySetting[1]}
           onMouseLeave={handleOnMouseLeave}
         >
-          {project.galleryText}
+          {gallery.text}
         </p>
       </div>
       <SlideButton
         className="prev"
         updateShow={updateShow}
         showSlide={showSlide}
-        symbol="&#10094;" 
+        symbol="&#10094;"
       />
       <SlideButton
         className="next"

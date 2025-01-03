@@ -14,5 +14,5 @@
   }
 
   .border-radius-changed {
-    border-right: 2px solid var(--background-color);
+    border-right: 2px solid green;
   }

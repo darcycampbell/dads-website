@@ -1,9 +1,9 @@
 import React from "react";
 
-const Slide = ({ showSlide, slide }) => {
+const SlideImage = ({ showSlide, slide }) => {
   return (
     <div
-      className="fade"
+      className="image container fade"
       style={
         showSlide === slide.id ? { display: "block" } : { display: "none" }
       }
@@ -13,4 +13,4 @@ const Slide = ({ showSlide, slide }) => {
   );
 };
 
-export default Slide;
+export default SlideImage;
